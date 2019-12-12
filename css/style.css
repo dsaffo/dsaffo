@@ -1,12 +1,17 @@
 body {
     background-color: floralwhite;
     padding-top: 15px;
+    padding-bottom: 15px;
     color: dimgray;
     font-family: ubuntu;
 }
 
 a {
      color: dimgray;
+}
+
+a:hover {
+  color: #e2b20e; 
 }
 
 .social-links a {
@@ -59,5 +64,48 @@ a {
     color: #e2b20e;
     //width: 100%;
     //border-bottom: 2px solid #e2b20e;
+}
+
+.teaser img{
+    width: 100%;
+    height: auto;
+}
+
+.project {
+    padding: 10px;
+     text-align: justify;
+    margin-bottom: 20px;
+}
+
+.project h5{
+    font-weight: bold;
+  
+}
+
+.line {
+  width: 100%;
+  border-top: 2px solid dimgrey;
+  margin-bottom: 10px;
+}
+
+.publications h5 {
+  font-size: 18px 
+}
+
+.publications p {
+  font-size: 12px 
+}
+
+.site-btn {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+    padding: 10px;
+	text-align: center;
+	position: relative;
+	margin-right: 10px;
+	border: 2px solid #e2b20e;
+	color: #40424a;
+	font-weight: 700;
 }
 
