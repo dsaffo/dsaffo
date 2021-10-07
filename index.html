@@ -23,7 +23,7 @@
 
   <link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
   <script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154499817-1"></script>
   <script>
@@ -48,7 +48,6 @@
         <div class="header sticky-top">
           <img src="img/circle-hero.png" style="width: 100%">
           <div class="social-links">
-            <a href="https://www.linkedin.com/in/david-saffo-a2408810a/" target="_blank"><i class="fa fa-linkedin"></i></a>
             <a href="https://twitter.com/Saffo_David" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="https://scholar.google.com/citations?user=P6Uk92EAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i></a>
             <a href="https://github.com/dsaffo" target="_blank"><i class="fa fa-github"></i></a>
@@ -76,13 +75,39 @@
             </div>
 
           </div>
-          <h6>CS PhD student at Northeastern University in the Visualization @ Khoury Lab. I am a software engineer and information visualization researcher focused particularly around autonomous, semi-autonomous, or otherwise unmanned systems.</h6>
+          <h6>4th year CS PhD candidate at Northeastern University in the Visualization @ Khoury Lab. I am a software engineer and HCI/Info-Vis researcher focused particularly around cross-platform XR collaberation.</h6>
           <h4>My Keywords: </h4>
-          <p>Temporal Geospatial Networks, Geospatial Movement Data, Autonomous Systems, VR/AR Visualization<br>Human Computer Interaction, User Centered Design, Detroit, Mechanical Keyboards, Red Pandas</p>
+          <p>Information Visualization, VR/AR Visualization, Collaberation, Cross-Platform Interaction, Quantitative Methods<br>Human Computer Interaction, User Centered Design, Detroit, Mechanical Keyboards, Red Pandas</p>
         </div>
         <div id="projects" class="projects">
           <h2>Projects</h2>
           <div class="line"></div>
+          <div class="project">
+            <div class="row">
+              <div class="col-lg-5 teaser">
+                <a href="https://github.com/michaschwab/VisConnect" target="_blank">
+                  <img src="https://camo.githubusercontent.com/cbd8225d818dbecf6c3dee79e5254418103b3c5db17f1a19032eeebcd80dffe8/68747470733a2f2f692e696d6775722e636f6d2f4c666a6e7a654f2e676966">
+                </a>
+              </div>
+              <div class="col-lg-7">
+                <div class="row">
+                  <div class="col-lg-5" style="margin-right: -50px">
+                    <a href="https://github.com/michaschwab/VisConnect" target="_blank">
+                      <h5>VisConnect</h5>
+                    </a>
+                  </div>
+                  <div class="col-lg-3">
+                    <a class="github-button" href="https://github.com/michaschwab/VisConnect" aria-label="Visit the repo"></a>
+                    <a class="github-button" href="https://github.com/michaschwab/VisConnect" data-icon="octicon-star" data-show-count="true" aria-label="Star Data Comets on GitHub"></a>
+                  </div>
+                </div>
+                <p>Visconnect is a framework for adding p2p synchnronous collaberation to new or existing web based visualizations. 
+                  Events, such as clicking, dragging, and brushing, are synchronized across collaborators. 
+                  Visconnect also supports synchnronization of custom events to enable custom collaberative interactions.</p>
+              </div>
+            </div>
+          </div>
+
           <div class="project">
             <div class="row">
               <div class="col-lg-5 teaser">
@@ -156,28 +181,258 @@
         <div id="publications" class="publications">
           <h2>Publications</h2>
           <div class="line"></div>
-          <div class="publication">
-            <div class="row">
-              <div class="col-lg-9">
-                <h5>GeoSocialVis: Co-Authorship Networks by Balancing Topology and Geography Layouts</h5>
-              </div>
-              <div class="col-lg-3">
-                <h6 style="float: right">IEEE VIS Poster: 2019</h6>
-              </div>
-            </div>
-            <p>D. Saffo, M. Schwab, M. Borkin, C. Dunne</p>
-          </div>
-          <div class="publication">
-            <div class="row">
-              <div class="col-lg-9">
-                <h5>Optimizing Prediction Model for a Noninvasive Brain Computer Interface</h5>
-              </div>
-              <div class="col-lg-3">
-                <h6 style="float: right">IEEE JBHI: 2019</h6>
-              </div>
-            </div>
-            <p>S. Borhani, J. Kilmarx, D. Saffo, L. Ng, R. Abiri and X. Zhao</p>
-          </div>
+          
+          <textarea id="bibtex_input" style="display:none;">
+            @article{DBLP:journals/cgf/SaffoLJBD20,
+              author    = {David Saffo and
+                           Aristotelis Leventidis and
+                           Twinkle Jain and
+                           Michelle A. Borkin and
+                           Cody Dunne},
+              title     = {Data Comets: Designing a Visualization Tool for Analyzing Autonomous
+                           Aerial Vehicle Logs with Grounded Evaluation},
+              journal   = {Comput. Graph. Forum},
+              volume    = {39},
+              number    = {3},
+              pages     = {455--468},
+              year      = {2020},
+              url       = {https://doi.org/10.1111/cgf.13994},
+              doi       = {10.1111/cgf.13994},
+              timestamp = {Wed, 26 Aug 2020 11:04:47 +0200},
+              biburl    = {https://dblp.org/rec/journals/cgf/SaffoLJBD20.bib},
+              bibsource = {dblp computer science bibliography, https://dblp.org},
+              eprint = {https://osf.io/a4hfd/},
+              Keywords = {article}
+            }
+            
+            @inproceedings{DBLP:conf/chi/BartolomeoPLSSC20,
+              author    = {Sara Di Bartolomeo and
+                           Aditeya Pandey and
+                           Aristotelis Leventidis and
+                           David Saffo and
+                           Uzma Haque Syeda and
+                           El{\'{\i}}n Carstensd{\'{o}}ttir and
+                           Magy Seif El{-}Nasr and
+                           Michelle A. Borkin and
+                           Cody Dunne},
+              title     = {Evaluating the Effect of Timeline Shape on Visualization Task Performance},
+              booktitle = {{CHI} '20: {CHI} Conference on Human Factors in Computing Systems,
+                           Honolulu, HI, USA, April 25-30, 2020},
+              pages     = {1--12},
+              publisher = {{ACM}},
+              year      = {2020},
+              url       = {https://doi.org/10.1145/3313831.3376237},
+              doi       = {10.1145/3313831.3376237},
+              biburl    = {https://dblp.org/rec/conf/chi/BartolomeoPLSSC20.bib},
+              bibsource = {dblp computer science bibliography, https://dblp.org},
+              eprint = {https://osf.io/2kdb9/},
+              Keywords = {article}
+            }
+            
+            @article{DBLP:journals/titb/BorhaniKSNAZ19,
+              author    = {Soheil Borhani and
+                           Justin Kilmarx and
+                           David Saffo and
+                           Lucien Ng and
+                           Reza Abiri and
+                           Xiaopeng Zhao},
+              title     = {Optimizing Prediction Model for a Noninvasive Brain-Computer Interface
+                           Platform Using Channel Selection, Classification, and Regression},
+              journal   = {{IEEE} J. Biomed. Health Informatics},
+              volume    = {23},
+              number    = {6},
+              pages     = {2475--2482},
+              year      = {2019},
+              url       = {https://doi.org/10.1109/JBHI.2019.2892379},
+              doi       = {10.1109/JBHI.2019.2892379},
+              timestamp = {Sat, 30 May 2020 19:51:50 +0200},
+              biburl    = {https://dblp.org/rec/journals/titb/BorhaniKSNAZ19.bib},
+              bibsource = {dblp computer science bibliography, https://dblp.org},
+              Keywords = {article}
+            }
+            
+            @article{schwab20-visconnect,
+              author={Michail {Schwab} and David {Saffo} and Yixuan {Zhang} and Shash {Sinha} and Cristina {Nita-Rotaru} and James {Tompkin} and Cody {Dunne} and Michelle A. {Borkin}},
+              journal={IEEE Transactions on Visualization and Computer Graphics}, 
+              title={{VisConnect}: Distributed Event Synchronization for Collaborative Visualization}, 
+              year={2020},
+              doi={10.1109/TVCG.2020.3030366},
+              eprint={https://osf.io/ut7e6},
+              volume={},
+              number={},
+              pages={1-1},
+              Keywords = {article}
+            }
+            
+            @article{9354592,
+              author={Schwab, Michail and Saffo, David and Bond, Nicholas and Sinha, Shash and Dunne, Cody and Huang, Jeff and Tompkin, James and Borkin, Michelle},
+              journal={IEEE Transactions on Visualization and Computer Graphics}, 
+              title={Scalable Scalable Vector Graphics: Automatic Translation of Interactive SVGs to a Multithread VDOM for Fast Rendering}, 
+              year={2021},
+              volume={},
+              number={},
+              pages={1-1},
+              doi={10.1109/TVCG.2021.3059294},
+              eprint={https://osf.io/ypxz2/},
+              Keywords={article}
+              }
+            
+            @inproceedings{vrchat,
+                author = {Saffo, David and Di Bartolomeo, Sara and Yildirim, Caglar and Dunne, Cody},
+                title = {Remote and Collaborative Virtual Reality Experiments via Social VR Platforms},
+                year = {2021},
+                isbn = {9781450380966},
+                publisher = {Association for Computing Machinery},
+                address = {New York, NY, USA},
+                url = {https://doi.org/10.1145/3411764.3445426},
+                doi = {10.1145/3411764.3445426},
+                booktitle = {Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},
+                articleno = {523},
+                numpages = {15},
+                keywords = {Replication Study, Quantitative Study, Qualitative study, Virtual Reality, Social VR, Transferability Study, Crowdsourcing},
+                location = {Yokohama, Japan},
+                series = {CHI '21},
+                eprint={https://osf.io/3crhg},
+                Keywords = {article}
+                }
+            
+            
+            
+            
+            
+             @inproceedings{10.1145/3411764.3446866,
+                author = {Ens, Barrett and Bach, Benjamin and Cordeil, Maxime and Engelke, Ulrich and Serrano, Marcos and Willett, Wesley and Prouzeau, Arnaud and Anthes, Christoph and B\"{u}schel, Wolfgang and Dunne, Cody and Dwyer, Tim and Grubert, Jens and Haga, Jason H. and Kirshenbaum, Nurit and Kobayashi, Dylan and Lin, Tica and Olaosebikan, Monsurat and Pointecker, Fabian and Saffo, David and Saquib, Nazmus and Schmalstieg, Dieter and Szafir, Danielle Albers and Whitlock, Matt and Yang, Yalong},
+                title = {Grand Challenges in Immersive Analytics},
+                year = {2021},
+                isbn = {9781450380966},
+                publisher = {Association for Computing Machinery},
+                address = {New York, NY, USA},
+                url = {https://doi.org/10.1145/3411764.3446866},
+                doi = {10.1145/3411764.3446866},
+                abstract = { Immersive Analytics is a quickly evolving field that unites several areas such as visualisation, immersive environments, and human-computer interaction to support human data analysis with emerging technologies. This research has thrived over the past years with multiple workshops, seminars, and a growing body of publications, spanning several conferences. Given the rapid advancement of interaction technologies and novel application domains, this paper aims toward a broader research agenda to enable widespread adoption. We present 17 key research challenges developed over multiple sessions by a diverse group of 24 international experts, initiated from a virtual scientific workshop at ACM CHI 2020. These challenges aim to coordinate future work by providing a systematic roadmap of current directions and impending hurdles to facilitate productive and effective applications for Immersive Analytics.},
+                booktitle = {Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},
+                articleno = {459},
+                numpages = {17},
+                keywords = {Immersive analytics, augmented reality, data visualisation, grand research challenges, virtual reality},
+                location = {Yokohama, Japan},
+                series = {CHI '21},
+                eprint = {https://dl.acm.org/doi/pdf/10.1145/3411764.3446866},
+                Keywords = {article}
+                }
+            
+            
+            @inproceedings{10.1145/3411764.3445510,
+                author = {South, Laura and Saffo, David and Borkin, Michelle A.},
+                title = {Detecting and Defending Against Seizure-Inducing GIFs in Social Media},
+                year = {2021},
+                isbn = {9781450380966},
+                publisher = {Association for Computing Machinery},
+                address = {New York, NY, USA},
+                url = {https://doi.org/10.1145/3411764.3445510},
+                doi = {10.1145/3411764.3445510},
+                abstract = {Despite recent improvements in online accessibility, the Internet remains an inhospitable place for users with photosensitive epilepsy, a chronic condition in which certain light stimuli can trigger seizures and even lead to death in extreme cases. In this paper, we explore how current risk detection systems have allowed attackers to take advantage of design oversights and target vulnerable users with photosensitivity on popular social media platforms. Through interviews with photosensitive individuals and a critical review of existing systems, we constructed design requirements for consumer-driven protective systems and developed a prototype browser extension for actively detecting and disarming potentially seizure-inducing GIFs and videos. We validate our system with a comprehensive dataset of simulated GIFs and GIFs collected from social media. Finally, we conduct a novel quantitative analysis of the prevalence of seizure-inducing GIFs across popular social media platforms and contribute recommendations for improving online accessibility for individuals with photosensitivity. All study materials are available at https://osf.io/5a3dy/.},
+                booktitle = {Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},
+                articleno = {273},
+                numpages = {17},
+                keywords = {GIFs, photosensitive epilepsy, human-computer interaction, accessibility},
+                location = {Yokohama, Japan},
+                series = {CHI '21},
+                eprint = {https://osf.io/4kgu6},
+                Keywords = {article}
+                }
+            
+            
+            %PrePrints
+            
+            @article {Makarious2021.03.05.434104,
+              author = {Makarious, Mary B. and Leonard, Hampton L. and Vitale, Dan and Iwaki, Hirotaka and Sargent, Lana and Dadu, Anant and Violich, Ivo and Hutchins, Elizabeth and Saffo, David and Bandres-Ciga, Sara and Kim, Jonggeol Jeff and Song, Yeajin and Bookman, Matt and Nojopranoto, Willy and Campbell, Roy H. and Hashemi, Sayed Hadi and Botia, Juan A. and Carter, John F. and Maleknia, Melina and Craig, David W. and Keuren-Jensen, Kendall Van and Morris, Huw R. and Hardy, John A. and Blauwendraat, Cornelis and Singleton, Andrew B. and Faghri, Faraz and Nalls, Mike A.},
+              editor = {,},
+              title = {Multi-Modality Machine Learning Predicting Parkinson{\textquoteright}s Disease},
+              elocation-id = {2021.03.05.434104},
+              year = {2021},
+              doi = {10.1101/2021.03.05.434104},
+              publisher = {Cold Spring Harbor Laboratory},
+              abstract = {Background Personalized medicine promises individualized disease prediction and treatment. The convergence of machine learning (ML) and available multi-modal data is key moving forward. We build upon previous work to deliver multi-modal predictions of Parkinson{\textquoteright}s Disease (PD).Methods We performed automated ML on multi-modal data from the Parkinson{\textquoteright}s Progression Marker Initiative (PPMI). After selecting the best performing algorithm, all PPMI data was used to tune the selected model. The model was validated in the Parkinson{\textquoteright}s Disease Biomarker Program (PDBP) dataset. Finally, networks were built to identify gene communities specific to PD.Findings Our initial model showed an area under the curve (AUC) of 89.72\% for the diagnosis of PD. The tuned model was then tested for validation on external data (PDBP, AUC 85.03\%). Optimizing thresholds for classification, increased the diagnosis prediction accuracy (balanced accuracy) and other metrics. Combining data modalities outperforms the single biomarker paradigm. UPSIT was the largest contributing predictor for the classification of PD. The transcriptomic data was used to construct a network of disease-relevant transcripts.Interpretation We have built a model using an automated ML pipeline to make improved multi-omic predictions of PD. The model developed improves disease risk prediction, a critical step for better assessment of PD risk. We constructed gene expression networks for the next generation of genomics-derived interventions. Our automated ML approach allows complex predictive models to be reproducible and accessible to the community.Funding National Institute on Aging, National Institute of Neurological Disorders and Stroke, the Michael J. Fox Foundation, and the Global Parkinson{\textquoteright}s Genetics Program.Evidence before this study Prior research into predictors of Parkinson{\textquoteright}s disease (PD) has either used basic statistical methods to make predictions across data modalities, or they have focused on a single data type or biomarker model. We have done this using an open-source automated machine learning (ML) framework on extensive multi-modal data, which we believe yields robust and reproducible results. We consider this the first true multi-modality ML study of PD risk classification.Added value of this study We used a variety of linear, non-linear, kernel, neural networks, and ensemble ML algorithms to generate an accurate classification of both cases and controls in independent datasets using data that is not involved in PD diagnosis itself at study recruitment. The model built in this paper significantly improves upon our previous models that used the entire training dataset in previous work1. Building on this earlier work, we showed that the PD diagnosis can be refined using improved algorithmic classification tools that may yield potential biological insights. We have taken careful consideration to develop and validate this model using public controlled-access datasets and an open-source ML framework to allow for reproducible and transparent results.Implications of all available evidence Training, validating, and tuning a diagnostic algorithm for PD will allow us to augment clinical diagnoses or risk assessments with less need for complex and expensive exams. Going forward, these models can be built on remote or asynchronously collected data which may be important in a growing telemedicine paradigm. More refined diagnostics will also increase clinical trial efficiency by potentially refining phenotyping and predicting onset, allowing providers to identify potential cases earlier. Early detection could lead to improved treatment response and higher efficacy. Finally, as part of our workflow, we built new networks representing communities of genes correlated in PD cases in a hypothesis-free manner, showing how new and existing genes may be connected and highlighting therapeutic opportunities.Competing Interest StatementHL, HI, FF, DV, YS, and MAN declare that they are consultants employed by Data Tecnica International, whose participation in this is part of a consulting agreement between the US National Institutes of Health and said company. HRM is employed by UCL. In the last 24 months he reports paid consultancy from Biogen, Biohaven, Lundbeck; lecture fees/honoraria from Wellcome Trust, Movement Disorders Society. Research Grants from Parkinsons UK, Cure Parkinsons Trust, PSP Association, CBD Solutions, Drake Foundation, Medical Research Council, Michael J Fox Foundation. HRM is also a co-applicant on a patent application related to C9ORF72 - Method for diagnosing a neurodegenerative disease (PCT/GB2012/052140).},
+              URL = {https://www.biorxiv.org/content/early/2021/03/07/2021.03.05.434104},
+              eprint = {https://www.biorxiv.org/content/early/2021/03/07/2021.03.05.434104.full.pdf},
+              journal = {bioRxiv},
+              Keywords = {preprint}
+            }
+            
+            @misc{makarious2021genoml,
+                  title={GenoML: Automated Machine Learning for Genomics}, 
+                  author={Mary B. Makarious and Hampton L. Leonard and Dan Vitale and Hirotaka Iwaki and David Saffo and Lana Sargent and Anant Dadu and Eduardo Salmerón Castaño and John F. Carter and Melina Maleknia and Juan A. Botia and Cornelis Blauwendraat and Roy H. Campbell and Sayed Hadi Hashemi and Andrew B. Singleton and Mike A. Nalls and Faraz Faghri},
+                  year={2021},
+                  eprint={https://arxiv.org/abs/2103.03221},
+                  archivePrefix={arXiv},
+                  primaryClass={cs.LG},
+                  Keywords = {preprint}
+            }
+            
+            
+            %Start Posters and Workshop
+            
+            @article{two,
+             title={Two Dimensions for Organizing Immersive Analytics: Toward a Taxonomy for Facet and Position},
+             url={osf.io/pk2rq},
+             DOI={10.31219/osf.io/pk2rq},
+             publisher={OSF Preprints},
+             author={Saffo, David and Di Bartolomeo, Sara and Yildirim, Caglar and Dunne, Cody},
+             year={2020},
+             month={May},
+             journal = {ACM CHI 2020 Workshop: Envisioning Future Productivity for Immersive Analytics (rooftop garden)},
+             Keywords = {poster}
+            }
+            
+            @inproceedings{DBLP:conf/chi/SaffoYBD20,
+              author    = {David Saffo and
+                           Caglar Yildirim and
+                           Sara Di Bartolomeo and
+                           Cody Dunne},
+              title     = {Crowdsourcing Virtual Reality Experiments using VRChat},
+              booktitle = {Extended Abstracts of the 2020 {CHI} Conference on Human Factors in
+                           Computing Systems, {CHI} 2020, Honolulu, HI, USA, April 25-30, 2020},
+              pages     = {1--8},
+              publisher = {{ACM}},
+              year      = {2020},
+              url       = {https://doi.org/10.1145/3334480.3382829},
+              doi       = {10.1145/3334480.3382829},
+              timestamp = {Tue, 12 May 2020 15:39:28 +0200},
+              biburl    = {https://dblp.org/rec/conf/chi/SaffoYBD20.bib},
+              bibsource = {dblp computer science bibliography, https://dblp.org},
+              keywords = {poster}
+            }
+            
+            @article{geosocial,
+             title={GeoSocialVis: Visualizing Geosocial Academic Co-Authorship Networks by Balancing Topology- and Geography- Based Layouts},
+             url={osf.io/ykwah},
+             DOI={10.31219/osf.io/ykwah},
+             publisher={OSF Preprints},
+             author={Saffo, David and Schwab, Michail and Borkin, Michelle and Dunne, Cody},
+             year={2020},
+             month={May},
+             journal={IEEE Vis 2019 Poster},
+             keywords={poster}
+            }
+            
+            @inproceedings{saffo:hal-02005325,
+              TITLE = {{Convolutional Neural Networks for a Cursor Control Brain Computer Interface}},
+              AUTHOR = {Saffo, David and Kilmarx, Justin A and Borhani, Soheil and Abiri, Reza and Zhao, Xiaopeng and Albert, Mark V},
+              URL = {https://hal.archives-ouvertes.fr/hal-02005325},
+              BOOKTITLE = {{2018 Biomedical Engineering Society (BMES) Annual Meeting}},
+              ADDRESS = {Atlanta, United States},
+              YEAR = {2018},
+              MONTH = Oct,
+              HAL_ID = {hal-02005325},
+              HAL_VERSION = {v1},
+              Keywords = {poster}
+            }
+            
+            
+            
+            </textarea>
+
+            <div class="bibtex_display" field_name="regex expression"></div>
 
         </div>
       </div>
@@ -240,7 +495,31 @@
         {
           year: "8/12/2019",
           title: 'Deployed Data Comets to PX4 users'
-        }
+        },
+        {
+          year: "5/25/2020",
+          title: 'Data Comets Published'
+        },
+        {
+          year: "5/20/2020",
+          title: 'Reached PhD Candidacy'
+        },
+        {
+          year: "9/1/2020",
+          title: 'Awarded Masters in Computer Science'
+        },
+        {
+          year: "05/08/2021",
+          title: 'First CHI FP Presentation'
+        },
+        {
+          year: "06/07/2021",
+          title: 'Started Internship at Human-Computer Interaction Lab University of Maryland'
+        }, 
+        {
+          year: "05/12/2022",
+          title: 'Graduating with PhD in Computer Science?'
+        }, 
       ]);
   </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
